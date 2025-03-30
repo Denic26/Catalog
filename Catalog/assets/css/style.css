@@ -1,0 +1,148 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Светлый фон для сайта */
+    color: #333; /* Тёмный текст */
+    margin-left: 100;
+}
+
+header, footer {
+    background-color: #333; /* Темный фон для шапки и подвала */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стиль для контейнера с товарами */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматическое количество колонок */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Стиль для карточек товаров */
+.product {
+    background-color: #fff;
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Подъем карточки при наведении */
+}
+
+/* Стиль для изображений товара */
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee; /* Линия под изображением */
+}
+
+/* Стиль для текста внутри карточки товара */
+.product h2 {
+    font-size: 1.6rem;
+    margin: 15px 20px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    margin: 0 20px 15px;
+    color: #666;
+}
+
+/* Кнопка "Подробнее" */
+.product a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 20px 20px;
+    background-color: #4CAF50; /* Зеленая кнопка */
+    color: white;
+    border-radius: 25px; /* Закругленные углы */
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #45a049; /* Темнее зеленый при наведении */
+}
+
+/* Форма фильтрации */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #333;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Закругленные углы */
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #4CAF50; /* Зеленая кнопка */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049; /* Темнее зеленый при наведении */
+}
+
+/* Дополнительные стили для подвала */
+footer {
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+/* Стили для шапки */
+header {
+    background-color: #333; /* Темный фон шапки */
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
